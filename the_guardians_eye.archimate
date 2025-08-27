@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" name="(new model)" id="id-8ca1986fb2294253ad2e726711174857" version="5.0.0">
+  <folder name="Strategy" id="id-3fbdca0a883340e89f765c1ea57c7b56" type="strategy"/>
+  <folder name="Business" id="id-2acb06cf4a144879b6bc17441f8857ad" type="business">
+    <element xsi:type="archimate:BusinessActor" name="CEMADEN" id="id-3f7d8bf19019408e99dbbf1264c4390d">
+      <documentation>Centro Nacional de Monitoramento e Alertas de Desastres Naturais (CEMADEN) é uma entidade pública responsável pelo monitoramento meteorológico e geológico em tempo real, análise de riscos, emissão de alertas e suporte técnico para prevenção e resposta a desastres naturais no Brasil. Atua como órgão central na coordenação das informações e colaboração entre diferentes entidades governamentais e a sociedade civil.&#xD;
+&#xD;
+O CEMADEN fornece dados, relatórios, sistemas de alerta e orientações para órgãos de defesa civil, governos estaduais e municipais, além de contribuir para a formulação de políticas públicas voltadas à mitigação de riscos ambientais.&#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessFunction" name="Monitoramento e prevenção de desastres" id="id-63fb7be7bc774f9db26f659eb2a0b30b">
+      <documentation>Conjunto de atividades contínuas realizadas para identificar, analisar e monitorar riscos ambientais e sociais relacionados a desastres naturais. Envolve a coleta de dados por meio de sensores, análise meteorológica e geológica, modelagem preditiva, emissão de alertas e a implementação de ações preventivas junto às comunidades e órgãos públicos.&#xD;
+&#xD;
+O processo visa reduzir impactos, proteger vidas e patrimônios, e aumentar a resiliência das populações vulneráveis, por meio de uma abordagem integrada e colaborativa entre diversas entidades.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessService" name="Detecção de desastres, Emissão de alertas, Análise de dados" id="id-6dbd85a1696f4932953673731fb50a49">
+      <documentation>Processo responsável por monitorar continuamente dados ambientais coletados por sensores, estações meteorológicas e sistemas remotos para identificar sinais precoces de eventos naturais adversos, como enchentes, deslizamentos e tempestades. Inclui a análise inicial dos dados para validar a ocorrência de um possível desastre.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessProcess" name="Coleta de dados, Classificação, Alerta, Resposta pós-desastre" id="id-4f90a17a244f457485bc4d378eec932e">
+      <documentation>Processo que envolve a aquisição contínua e sistemática de informações ambientais e sociais por meio de sensores, estações meteorológicas, imagens de satélite e fontes externas confiáveis. Essa coleta é fundamental para alimentar sistemas de monitoramento e análise, garantindo dados atualizados e precisos para a tomada de decisão.</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessObject" name="Dados meteorológicos, geográficos, humanos e materiais" id="id-1f2ba17ca1404a15bc06db2d6ad90109">
+      <documentation>Conjunto de informações coletadas e utilizadas para monitoramento, análise e tomada de decisão em situações de desastres naturais. &#xD;
+&#xD;
+- Dados meteorológicos incluem temperatura, precipitação, ventos e outras variáveis atmosféricas.&#xD;
+- Dados geográficos abrangem localização, relevo, uso do solo e mapeamentos de áreas de risco.&#xD;
+- Dados humanos referem-se a informações populacionais, vulnerabilidades sociais e características demográficas.&#xD;
+- Dados materiais envolvem infraestrutura, recursos físicos e bens que podem ser afetados pelos desastres.&#xD;
+&#xD;
+Esses dados são fundamentais para alimentar sistemas de monitoramento, classificação de risco e emissão de alertas precisos.&#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:BusinessCollaboration" name=" Parceria com Defesa Civil e outras entidades locais" id="id-5457f990034244a8beb32cae5b600d06">
+      <documentation>Aliança estratégica entre o CEMADEN e órgãos como a Defesa Civil, prefeituras, instituições de segurança pública e outras organizações locais. Essa colaboração visa o intercâmbio de informações, recursos e coordenação conjunta para prevenção, monitoramento e resposta a desastres naturais.&#xD;
+&#xD;
+A parceria fortalece a capacidade operacional das entidades envolvidas, melhora a comunicação e otimiza o uso dos sistemas de alerta e apoio às comunidades vulneráveis.</documentation>
+    </element>
+  </folder>
+  <folder name="Application" id="id-f3d6f4a8b41542f5814d93badccc5876" type="application">
+    <element xsi:type="archimate:ApplicationComponent" name="Módulo de Coleta" id="id-5e5489bf5fa84990aa2a6bc6c071cca0">
+      <documentation>Componente de software responsável pela aquisição e integração de dados provenientes de múltiplas fontes, como sensores ambientais, estações meteorológicas e sistemas externos. Esse módulo processa, valida e prepara os dados para serem utilizados por outras aplicações e processos de negócio, garantindo a qualidade e a disponibilidade das informações em tempo real.</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationService" name="Processamento de dados" id="id-0cb07fd1b00b48359708fa1936e1b92e">
+      <documentation>Componente responsável por realizar o tratamento, transformação e análise dos dados coletados. Executa algoritmos de filtragem, limpeza, agregação e aplicação de técnicas de inteligência artificial e machine learning para identificar padrões, prever eventos e gerar insights que suportam a tomada de decisão nos processos de negócio.&#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:ApplicationInterface" name="Classificação de risco" id="id-110cb8b3e300416e9e7a7864736f6c3b">
+      <documentation>Componente responsável por avaliar e categorizar os dados coletados para determinar o nível de risco associado a eventos naturais. Utiliza modelos preditivos, regras de negócio e algoritmos de inteligência artificial para identificar a gravidade, probabilidade e impacto potencial dos desastres, apoiando a priorização das respostas e a emissão de alertas.</documentation>
+    </element>
+    <element xsi:type="archimate:DataObject" name="Tabelas do banco de dados" id="id-75d2ae0e94b94cd28d84b3d928493705">
+      <documentation>Estruturas organizadas que armazenam os dados coletados e processados pelo sistema. As tabelas contêm registros sobre variáveis meteorológicas, geográficas, informações sobre desastres, alertas emitidos, usuários e histórico de eventos. Servem como base para consultas, análises e geração de relatórios pelos módulos da aplicação.</documentation>
+    </element>
+  </folder>
+  <folder name="Technology &amp; Physical" id="id-6b72681c8bf54e2e870c40b8b3051496" type="technology">
+    <element xsi:type="archimate:Node" name="Servidor de Aplicação" id="id-93a47a37b4f74473b96c647595a61b89">
+      <documentation>Infraestrutura física ou virtual que hospeda os componentes de aplicação responsáveis pelo processamento dos dados do sistema. O servidor de aplicação fornece recursos computacionais, gerenciamento de execução, serviços de comunicação e segurança necessários para o funcionamento contínuo e eficiente dos módulos de coleta, processamento, classificação e emissão de alertas.</documentation>
+    </element>
+    <element xsi:type="archimate:SystemSoftware" name="Navegador Web" id="id-afa513df8893444fb8e00724e91cc0ed"/>
+    <element xsi:type="archimate:SystemSoftware" name="System Software" id="id-b891568e530e4cb2aa0dcd087a413dbc"/>
+    <element xsi:type="archimate:Device" name="Backend da Aplicação (DOTNET)" id="id-89a241c8a3af47fdb7f8464fed64ca09">
+      <documentation>Componente tecnológico que representa o backend da aplicação desenvolvido em .NET. Responsável pela lógica de negócio, processamento de dados, comunicação com banco de dados e integração com sistemas externos. Oferece APIs e serviços essenciais para suportar os módulos da aplicação, garantindo segurança, escalabilidade e performance adequadas ao sistema de monitoramento e prevenção de desastres.</documentation>
+    </element>
+    <element xsi:type="archimate:SystemSoftware" name="Ubuntu 22.04(VM), Linux, Hivemq MQTT, Python runtime" id="id-d2ae91ea16e9418fbeb7443e56ccb400">
+      <documentation>Máquina virtual executando o sistema operacional Ubuntu 22.04, utilizada para hospedar serviços, aplicações e processos relacionados ao sistema de monitoramento. Proporciona um ambiente seguro, estável e configurável para implantação dos componentes tecnológicos.</documentation>
+    </element>
+    <element xsi:type="archimate:TechnologyInterface" name="Porta SSH, API REST, Interfaces de Rede" id="id-dcf85eb361ed4d03b6b4d46f17cb966c">
+      <documentation>Ponto de acesso seguro para administração remota dos servidores e máquinas virtuais via protocolo SSH (Secure Shell). Permite a conexão criptografada para gerenciamento, configuração e manutenção dos sistemas, garantindo segurança nas operações de acesso remoto.</documentation>
+    </element>
+    <element xsi:type="archimate:TechnologyService" name="Serviço de autenticação, Serviço MQTT" id="id-00c425818dcd42a2a720b6b03196cc5c">
+      <documentation>Serviço responsável por validar identidades de usuários, dispositivos e sistemas que acessam a infraestrutura. Fornece mecanismos de autenticação, como login via credenciais, tokens ou certificados digitais, garantindo segurança e controle de acesso aos recursos do sistema.</documentation>
+    </element>
+    <element xsi:type="archimate:Artifact" name="Arquivo de configuração, script de backup" id="id-c9d3d5002b5f48b59129a7a2ddadae14">
+      <documentation>Arquivo que contém parâmetros, definições e instruções que configuram o comportamento dos sistemas e serviços. Utilizado para personalizar a execução de aplicativos, servidores, serviços de rede e componentes da infraestrutura, garantindo a operação adequada e conforme os requisitos do sistema.</documentation>
+    </element>
+    <element xsi:type="archimate:Path" name="Rede LAN, Rede Wi-Fi, Rede 4G/5G" id="id-b88c06c932fd4cbcac862d126af127e9">
+      <documentation>Rede local cabeada que conecta dispositivos e sistemas dentro de um ambiente restrito, como um escritório ou data center. Proporciona alta velocidade e baixa latência para transmissão de dados, garantindo estabilidade e segurança na comunicação interna.</documentation>
+    </element>
+    <element xsi:type="archimate:CommunicationNetwork" name="Switch Gerenciável, Rede Corporativa" id="id-4bc067501b5a465589c5af947864875c">
+      <documentation>Equipamento de rede que conecta múltiplos dispositivos dentro da infraestrutura, permitindo o gerenciamento avançado do tráfego de dados. Oferece funcionalidades como segmentação de rede (VLANs), monitoramento, controle de acesso e priorização de pacotes para garantir desempenho e segurança da rede.</documentation>
+    </element>
+  </folder>
+  <folder name="Motivation" id="id-bd850a92a6bd43a19388676d49c33d36" type="motivation">
+    <element xsi:type="archimate:Driver" name="Necessidade de reduzir impactos de desastres naturais" id="id-47a23c36ee39441aaa5eb1586170bd3f">
+      <documentation>Representa a necessidade estratégica de mitigar os efeitos adversos causados por desastres naturais, como enchentes, secas, tempestades e terremotos, com foco em preservar a integridade dos serviços, infraestrutura e segurança da população.</documentation>
+    </element>
+    <element xsi:type="archimate:Stakeholder" name="CEMADEN" id="id-aba859f32ca749e49522acf7b136cd38">
+      <documentation>Centro Nacional de Monitoramento e Alertas de Desastres Naturais</documentation>
+    </element>
+    <element xsi:type="archimate:Assessment" name="Alta vulnerabilidade populacional e ambiental em regiões de risco" id="id-b77cb0bd3f1c4b4691e106eabd8bf430">
+      <documentation>Condição atual em que populações e ecossistemas estão expostos a altos riscos devido à localização geográfica, infraestrutura precária e baixa capacidade de adaptação ou resposta a desastres naturais.</documentation>
+    </element>
+    <element xsi:type="archimate:Goal" name="Aumentar a capacidade de resposta e prevenção a desastres" id="id-45b9217da8b64ef7bb2a1f8311aa2262">
+      <documentation>Fortalecer os mecanismos institucionais, operacionais e tecnológicos voltados à prevenção de desastres e à resposta eficaz em situações de emergência. O objetivo é minimizar danos humanos, materiais e ambientais, garantindo maior resiliência e continuidade dos serviços essenciais.</documentation>
+    </element>
+    <element xsi:type="archimate:Goal" name="Detectar eventos em tempo real e emitir alertas precisos" id="id-bca67d58d4d543c598e90d803b6a9ffc">
+      <documentation>Requisito funcional que visa garantir a identificação imediata de eventos críticos relacionados a desastres naturais, como enchentes, deslizamentos ou tempestades, por meio de sensores, dados meteorológicos e análises preditivas. Inclui também a emissão automatizada e georreferenciada de alertas confiáveis para as autoridades e a população afetada.</documentation>
+    </element>
+    <element xsi:type="archimate:Requirement" name="Sistema integrado de sensores + IA + alertas" id="id-231f63d9bcf74bc691b9967502726980">
+      <documentation>Solução tecnológica composta pela integração de sensores físicos (IoT), algoritmos de inteligência artificial e mecanismos automatizados de notificação. O sistema coleta dados ambientais em tempo real (como temperatura, umidade, solo e chuvas), processa e analisa padrões críticos com IA e, quando detectado um risco, emite alertas georreferenciados por meio de canais como aplicativos móveis, SMS, sirenes locais e painéis digitais.&#xD;
+&#xD;
+Essa integração permite detectar desastres naturais iminentes com rapidez e precisão, reduzindo o tempo de resposta e mitigando impactos à população e ao meio ambiente.&#xD;
+&#xD;
+O sistema apoia diretamente a meta de aumentar a capacidade de resposta e prevenção a desastres e realiza o requisito de detectar eventos em tempo real e emitir alertas precisos.&#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:Constraint" name="Conectividade limitada em áreas remotas" id="id-c44747da85a64d859968776116668d7d">
+      <documentation>Avaliação que identifica a existência de limitações significativas de acesso à rede em regiões geograficamente isoladas ou de difícil infraestrutura. Essa restrição compromete o funcionamento de sistemas de monitoramento, transmissão de dados em tempo real e emissão de alertas, afetando diretamente a eficácia de soluções tecnológicas voltadas à prevenção e resposta a desastres naturais.&#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:Principle" name="Dados abertos e decisões baseadas em evidência" id="id-9c6f37f17ccb438682c9a44d93247c7a">
+      <documentation>Princípio orientador que enfatiza a transparência e o uso de dados públicos acessíveis para fundamentar decisões estratégicas e operacionais. A adoção desse princípio garante que políticas de prevenção e resposta a desastres sejam baseadas em informações confiáveis, atualizadas e disponíveis para múltiplos stakeholders, promovendo a colaboração e a eficácia das ações.&#xD;
+</documentation>
+    </element>
+    <element xsi:type="archimate:Outcome" name="Redução no tempo de resposta e mitigação de danos" id="id-be18e34e756c4b989f7e89ecec0ebd4e">
+      <documentation>Objetivo estratégico de diminuir o intervalo entre a detecção de um desastre natural e a implementação das ações de resposta, além de minimizar os impactos negativos sobre pessoas, infraestrutura e meio ambiente. Atingir esse objetivo aumenta a resiliência da comunidade e a eficiência dos recursos mobilizados em situações de emergência.</documentation>
+    </element>
+  </folder>
+  <folder name="Implementation &amp; Migration" id="id-22a58eaeb4aa440a9fb10ac62098765f" type="implementation_migration">
+    <element xsi:type="archimate:WorkPackage" name="Work Package" id="id-005a44b7796a47f59b2d6bf161cbcd0e"/>
+  </folder>
+  <folder name="Other" id="id-ae9983de51764bc7aacd8bf66dbca259" type="other"/>
+  <folder name="Relations" id="id-6a3a1833a88243d0803f75ffacdf9ced" type="relations">
+    <element xsi:type="archimate:AssociationRelationship" id="id-4d9d5fcd04614a3091d6acd83268c9f1" source="id-aba859f32ca749e49522acf7b136cd38" target="id-47a23c36ee39441aaa5eb1586170bd3f"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-acf5d6af75a941d388f4aa9440263fcb" source="id-47a23c36ee39441aaa5eb1586170bd3f" target="id-b77cb0bd3f1c4b4691e106eabd8bf430"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="id-15fddc5e31b2489da9fe7627958bf4b8" source="id-b77cb0bd3f1c4b4691e106eabd8bf430" target="id-45b9217da8b64ef7bb2a1f8311aa2262"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-fd0ca5b2ddad482f8385de30bf227b0c" source="id-45b9217da8b64ef7bb2a1f8311aa2262" target="id-bca67d58d4d543c598e90d803b6a9ffc"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="id-568d3afb579849e892f80d342f7fbe5e" source="id-bca67d58d4d543c598e90d803b6a9ffc" target="id-231f63d9bcf74bc691b9967502726980"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="id-f1e1f6db2e26416c93d299ce1c52ec61" source="id-c44747da85a64d859968776116668d7d" target="id-231f63d9bcf74bc691b9967502726980"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-c143fbe26d1b45268ade1f5e2dc34ea8" source="id-9c6f37f17ccb438682c9a44d93247c7a" target="id-c44747da85a64d859968776116668d7d"/>
+    <element xsi:type="archimate:RealizationRelationship" id="id-f46a3aef836e43c58bcd876ba71437c9" source="id-9c6f37f17ccb438682c9a44d93247c7a" target="id-be18e34e756c4b989f7e89ecec0ebd4e"/>
+    <element xsi:type="archimate:InfluenceRelationship" id="id-b8f2200fd72345c09265a42d93807b32" source="id-3f7d8bf19019408e99dbbf1264c4390d" target="id-aba859f32ca749e49522acf7b136cd38"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="id-bab6762cd5bd437e861568e18a44eac8" source="id-3f7d8bf19019408e99dbbf1264c4390d" target="id-63fb7be7bc774f9db26f659eb2a0b30b"/>
+    <element xsi:type="archimate:ServingRelationship" id="id-28b6b1c34e7247b6b64f489525a3b3a3" source="id-63fb7be7bc774f9db26f659eb2a0b30b" target="id-6dbd85a1696f4932953673731fb50a49"/>
+    <element xsi:type="archimate:RealizationRelationship" id="id-7f48cf74012045ce832f9deaa0659d46" source="id-4f90a17a244f457485bc4d378eec932e" target="id-6dbd85a1696f4932953673731fb50a49"/>
+    <element xsi:type="archimate:AccessRelationship" id="id-b32182a7ab9b40659f05b35731345f8f" source="id-4f90a17a244f457485bc4d378eec932e" target="id-1f2ba17ca1404a15bc06db2d6ad90109"/>
+    <element xsi:type="archimate:AssociationRelationship" id="id-2fc3b44d961c4eb0998c34aac6b7fa78" source="id-3f7d8bf19019408e99dbbf1264c4390d" target="id-5457f990034244a8beb32cae5b600d06"/>
+    <element xsi:type="archimate:RealizationRelationship" id="id-0c6a587171154d0a9b50a22f04ffee9c" source="id-5e5489bf5fa84990aa2a6bc6c071cca0" target="id-0cb07fd1b00b48359708fa1936e1b92e"/>
+    <element xsi:type="archimate:AccessRelationship" id="id-2ba0c0d53cad4d3f8f5ba7ac40d10b69" source="id-110cb8b3e300416e9e7a7864736f6c3b" target="id-75d2ae0e94b94cd28d84b3d928493705"/>
+    <element xsi:type="archimate:FlowRelationship" id="id-a1959b47a00d41e8a80dd015aa8b1e06" source="id-110cb8b3e300416e9e7a7864736f6c3b" target="id-0cb07fd1b00b48359708fa1936e1b92e"/>
+    <element xsi:type="archimate:ServingRelationship" id="id-5b325e94407242f3b9f43f34ae5615c1" source="id-0cb07fd1b00b48359708fa1936e1b92e" target="id-6dbd85a1696f4932953673731fb50a49"/>
+    <element xsi:type="archimate:RealizationRelationship" id="id-da5c7bfc9353416e8f946fc228c1966b" source="id-5e5489bf5fa84990aa2a6bc6c071cca0" target="id-4f90a17a244f457485bc4d378eec932e"/>
+    <element xsi:type="archimate:ServingRelationship" id="id-b81b1c55d940445cbb78584535d22f93" source="id-3f7d8bf19019408e99dbbf1264c4390d" target="id-110cb8b3e300416e9e7a7864736f6c3b"/>
+    <element xsi:type="archimate:RealizationRelationship" id="id-315e60c849ae4725bad803c9f3f42764" source="id-63fb7be7bc774f9db26f659eb2a0b30b" target="id-6dbd85a1696f4932953673731fb50a49"/>
+    <element xsi:type="archimate:RealizationRelationship" id="id-b62f46d57a964ce9bb473659bebbc8fb" source="id-0cb07fd1b00b48359708fa1936e1b92e" target="id-6dbd85a1696f4932953673731fb50a49"/>
+    <element xsi:type="archimate:ServingRelationship" id="id-317d99191ca94fe6b4ce20716f5b3d5f" source="id-0cb07fd1b00b48359708fa1936e1b92e" target="id-110cb8b3e300416e9e7a7864736f6c3b"/>
+    <element xsi:type="archimate:RealizationRelationship" id="id-91624f76cd3e410b84ebd9e61577300c" source="id-75d2ae0e94b94cd28d84b3d928493705" target="id-1f2ba17ca1404a15bc06db2d6ad90109"/>
+    <element xsi:type="archimate:ServingRelationship" id="id-83774ea490504789b149a12b9b6ba819" source="id-110cb8b3e300416e9e7a7864736f6c3b" target="id-6dbd85a1696f4932953673731fb50a49"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="id-8d99da1a1bcc47e687f07ed081cd47da" source="id-5457f990034244a8beb32cae5b600d06" target="id-4f90a17a244f457485bc4d378eec932e"/>
+    <element xsi:type="archimate:ServingRelationship" id="id-a9a81cef7ff141d09df398976fdc174f" source="id-3f7d8bf19019408e99dbbf1264c4390d" target="id-93a47a37b4f74473b96c647595a61b89"/>
+    <element xsi:type="archimate:RealizationRelationship" id="id-fad9299c78db4d448e90dc08f62f266d" source="id-93a47a37b4f74473b96c647595a61b89" target="id-89a241c8a3af47fdb7f8464fed64ca09"/>
+    <element xsi:type="archimate:RealizationRelationship" id="id-281a5c657fb54cc3b6a5df34d6dc873f" source="id-89a241c8a3af47fdb7f8464fed64ca09" target="id-d2ae91ea16e9418fbeb7443e56ccb400"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="id-4e60abd5aa384740819d78a3e4dba6de" source="id-89a241c8a3af47fdb7f8464fed64ca09" target="id-d2ae91ea16e9418fbeb7443e56ccb400"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="id-75115b5f5e164d5497390254d59e41cd" source="id-93a47a37b4f74473b96c647595a61b89" target="id-89a241c8a3af47fdb7f8464fed64ca09"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="id-4c62b7159fc44f47accb6d2bf0ae6ee4" source="id-d2ae91ea16e9418fbeb7443e56ccb400" target="id-dcf85eb361ed4d03b6b4d46f17cb966c"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="id-59d80f325e3a44f48cd4dcae664fced2" source="id-dcf85eb361ed4d03b6b4d46f17cb966c" target="id-00c425818dcd42a2a720b6b03196cc5c"/>
+    <element xsi:type="archimate:ServingRelationship" id="id-014d6810071b444d9d5d7fa0bc67b4a6" source="id-dcf85eb361ed4d03b6b4d46f17cb966c" target="id-00c425818dcd42a2a720b6b03196cc5c"/>
+    <element xsi:type="archimate:RealizationRelationship" id="id-9fa477e3b5344d0d9a01b5c829b0f8af" source="id-c9d3d5002b5f48b59129a7a2ddadae14" target="id-1f2ba17ca1404a15bc06db2d6ad90109"/>
+    <element xsi:type="archimate:AssignmentRelationship" id="id-0c2f23f1d94b46668296003c716b92d7" source="id-93a47a37b4f74473b96c647595a61b89" target="id-c9d3d5002b5f48b59129a7a2ddadae14"/>
+    <element xsi:type="archimate:ServingRelationship" id="id-07452232cc6c465786224eff95f54d33" source="id-00c425818dcd42a2a720b6b03196cc5c" target="id-b88c06c932fd4cbcac862d126af127e9"/>
+    <element xsi:type="archimate:FlowRelationship" id="id-3a581d2339a84f97935de9cbaf81a87b" source="id-b88c06c932fd4cbcac862d126af127e9" target="id-4bc067501b5a465589c5af947864875c"/>
+  </folder>
+  <folder name="Views" id="id-550905b4caf946dfa6abd41e9a9069ad" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Default View" id="id-208d9ec79a354af19c2af21cc3a31821">
+      <child xsi:type="archimate:DiagramObject" id="id-19223e6be3ef4f6bb1b66347c1d729d0" targetConnections="id-ac84e560332a43fc976551517cf08ef0" archimateElement="id-47a23c36ee39441aaa5eb1586170bd3f">
+        <bounds x="144" y="149" width="145" height="76"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-4ee6f5f1c0ed4bc490eefbcf9fa991b2" source="id-19223e6be3ef4f6bb1b66347c1d729d0" target="id-306762ef51594ce0bfb53047753a2896" archimateRelationship="id-acf5d6af75a941d388f4aa9440263fcb"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-17333abcb5b14d48918651b4c86391d9" targetConnections="id-e2ee82a313064e2abad39d4f237e5a88" archimateElement="id-aba859f32ca749e49522acf7b136cd38">
+        <bounds x="24" y="31" width="145" height="69"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-ac84e560332a43fc976551517cf08ef0" source="id-17333abcb5b14d48918651b4c86391d9" target="id-19223e6be3ef4f6bb1b66347c1d729d0" archimateRelationship="id-4d9d5fcd04614a3091d6acd83268c9f1"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-306762ef51594ce0bfb53047753a2896" targetConnections="id-4ee6f5f1c0ed4bc490eefbcf9fa991b2" archimateElement="id-b77cb0bd3f1c4b4691e106eabd8bf430">
+        <bounds x="288" y="26" width="157" height="80"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-11d06a82184b49298805c0bbd8f05ccf" source="id-306762ef51594ce0bfb53047753a2896" target="id-2f0d666b40154c9eba0c8da2faf71e8e" archimateRelationship="id-15fddc5e31b2489da9fe7627958bf4b8"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-2f0d666b40154c9eba0c8da2faf71e8e" targetConnections="id-11d06a82184b49298805c0bbd8f05ccf" archimateElement="id-45b9217da8b64ef7bb2a1f8311aa2262">
+        <bounds x="336" y="151" width="145" height="71"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-c28195ef929d4f4a8e446668873d1d29" source="id-2f0d666b40154c9eba0c8da2faf71e8e" target="id-959fc1206f7f43f3b2ad81a37226d835" archimateRelationship="id-fd0ca5b2ddad482f8385de30bf227b0c"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-959fc1206f7f43f3b2ad81a37226d835" targetConnections="id-c28195ef929d4f4a8e446668873d1d29" archimateElement="id-bca67d58d4d543c598e90d803b6a9ffc">
+        <bounds x="480" y="27" width="157" height="78"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-da6f1f0058c240519b97c5475009d818" source="id-959fc1206f7f43f3b2ad81a37226d835" target="id-644aba455eb742a7b64096677294cb5e" archimateRelationship="id-568d3afb579849e892f80d342f7fbe5e"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-644aba455eb742a7b64096677294cb5e" targetConnections="id-da6f1f0058c240519b97c5475009d818 id-906a6382446a47248364688beb8bafc0" archimateElement="id-231f63d9bcf74bc691b9967502726980">
+        <bounds x="504" y="151" width="133" height="72"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-f5e71da223514bff978f9e4e4659c63d" targetConnections="id-1838a07878b34b33a5278e5d63e81b02" archimateElement="id-c44747da85a64d859968776116668d7d">
+        <bounds x="684" y="29" width="121" height="73"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-906a6382446a47248364688beb8bafc0" source="id-f5e71da223514bff978f9e4e4659c63d" target="id-644aba455eb742a7b64096677294cb5e" archimateRelationship="id-f1e1f6db2e26416c93d299ce1c52ec61"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-13e51e5f3ecc4cc6b966261ea61dfdcc" archimateElement="id-9c6f37f17ccb438682c9a44d93247c7a">
+        <bounds x="696" y="149" width="145" height="76"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-1838a07878b34b33a5278e5d63e81b02" source="id-13e51e5f3ecc4cc6b966261ea61dfdcc" target="id-f5e71da223514bff978f9e4e4659c63d" archimateRelationship="id-c143fbe26d1b45268ade1f5e2dc34ea8"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-ff892ec2b2e84a409acef4ed148e5091" source="id-13e51e5f3ecc4cc6b966261ea61dfdcc" target="id-05aff536656d4a2e8427013affdf7f57" archimateRelationship="id-f46a3aef836e43c58bcd876ba71437c9"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-05aff536656d4a2e8427013affdf7f57" targetConnections="id-ff892ec2b2e84a409acef4ed148e5091" archimateElement="id-be18e34e756c4b989f7e89ecec0ebd4e">
+        <bounds x="876" y="72" width="193" height="60"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-0c8ad020e9434891930a27a2fef98669" archimateElement="id-3f7d8bf19019408e99dbbf1264c4390d">
+        <bounds x="24" y="264" width="133" height="49"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-e2ee82a313064e2abad39d4f237e5a88" source="id-0c8ad020e9434891930a27a2fef98669" target="id-17333abcb5b14d48918651b4c86391d9" archimateRelationship="id-b8f2200fd72345c09265a42d93807b32"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-4f1e6673b62c40748fbe7a5308753a8e" source="id-0c8ad020e9434891930a27a2fef98669" target="id-9b04fc9361c946e088583ea996dd4b2d" archimateRelationship="id-bab6762cd5bd437e861568e18a44eac8"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-3e2e4ee46df94220bccc99d5cff19064" source="id-0c8ad020e9434891930a27a2fef98669" target="id-0c8f73b98fb34375be5291e09a220684" archimateRelationship="id-2fc3b44d961c4eb0998c34aac6b7fa78"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-486e918406b4407caf1623e2285852ab" source="id-0c8ad020e9434891930a27a2fef98669" target="id-f9bea944c1db4f3cb5ebec04504eb637" archimateRelationship="id-b81b1c55d940445cbb78584535d22f93"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-4c922bea2f7f469285aaa922152f08f2" source="id-0c8ad020e9434891930a27a2fef98669" target="id-e1d9f750320845158a07ce0943dcddc8" archimateRelationship="id-a9a81cef7ff141d09df398976fdc174f"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-9b04fc9361c946e088583ea996dd4b2d" targetConnections="id-4f1e6673b62c40748fbe7a5308753a8e" archimateElement="id-63fb7be7bc774f9db26f659eb2a0b30b">
+        <bounds x="216" y="261" width="156" height="71"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-fed9e39625154741bc740aae993ef26d" source="id-9b04fc9361c946e088583ea996dd4b2d" target="id-793ceb3455134b24b48d5701197f7c94" archimateRelationship="id-315e60c849ae4725bad803c9f3f42764"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-793ceb3455134b24b48d5701197f7c94" targetConnections="id-e445956c4bca45c6bda4104c55659394 id-fed9e39625154741bc740aae993ef26d id-1581a2e95d5240b4955972fe9fd0fbba id-852685dc9e46440483372509e7ae330c" archimateElement="id-6dbd85a1696f4932953673731fb50a49">
+        <bounds x="408" y="256" width="169" height="65"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-5ec7d86ac0274acc8d0a3ad3f5ebd87b" targetConnections="id-3518b64211f5456b979f236af57125d2 id-066b627582d54944894a6644e8abf171" archimateElement="id-4f90a17a244f457485bc4d378eec932e">
+        <bounds x="624" y="260" width="145" height="77"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-e445956c4bca45c6bda4104c55659394" source="id-5ec7d86ac0274acc8d0a3ad3f5ebd87b" target="id-793ceb3455134b24b48d5701197f7c94" archimateRelationship="id-7f48cf74012045ce832f9deaa0659d46"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-bb3fea0d22394d19bfbb301589f8a24a" source="id-5ec7d86ac0274acc8d0a3ad3f5ebd87b" target="id-0f7a56e784924177862d86f8c07317dc" archimateRelationship="id-b32182a7ab9b40659f05b35731345f8f"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-0f7a56e784924177862d86f8c07317dc" targetConnections="id-bb3fea0d22394d19bfbb301589f8a24a id-4918db38191f4f3293f28c02270aea7e id-68b7df4b1fdb46c8baff6b69c06307da" archimateElement="id-1f2ba17ca1404a15bc06db2d6ad90109">
+        <bounds x="815" y="267" width="181" height="63"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-0c8f73b98fb34375be5291e09a220684" targetConnections="id-3e2e4ee46df94220bccc99d5cff19064" archimateElement="id-5457f990034244a8beb32cae5b600d06">
+        <bounds x="96" y="372" width="157" height="61"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-066b627582d54944894a6644e8abf171" source="id-0c8f73b98fb34375be5291e09a220684" target="id-5ec7d86ac0274acc8d0a3ad3f5ebd87b" archimateRelationship="id-8d99da1a1bcc47e687f07ed081cd47da"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-ef57feff12c24da4b10fe97fee17fdc5" archimateElement="id-5e5489bf5fa84990aa2a6bc6c071cca0">
+        <bounds x="96" y="456" width="131" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-9772d1b1b2e44d78b8bafd8ed476647a" source="id-ef57feff12c24da4b10fe97fee17fdc5" target="id-d04febd59d454532b55a044e4d6022d5" archimateRelationship="id-0c6a587171154d0a9b50a22f04ffee9c"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-3518b64211f5456b979f236af57125d2" source="id-ef57feff12c24da4b10fe97fee17fdc5" target="id-5ec7d86ac0274acc8d0a3ad3f5ebd87b" archimateRelationship="id-da5c7bfc9353416e8f946fc228c1966b"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-d04febd59d454532b55a044e4d6022d5" targetConnections="id-9772d1b1b2e44d78b8bafd8ed476647a" archimateElement="id-0cb07fd1b00b48359708fa1936e1b92e">
+        <bounds x="307" y="456" width="138" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-1581a2e95d5240b4955972fe9fd0fbba" source="id-d04febd59d454532b55a044e4d6022d5" target="id-793ceb3455134b24b48d5701197f7c94" archimateRelationship="id-b62f46d57a964ce9bb473659bebbc8fb"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-e4df10a6127442328f7c45ab955ea731" source="id-d04febd59d454532b55a044e4d6022d5" target="id-f9bea944c1db4f3cb5ebec04504eb637" archimateRelationship="id-317d99191ca94fe6b4ce20716f5b3d5f"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-f9bea944c1db4f3cb5ebec04504eb637" targetConnections="id-486e918406b4407caf1623e2285852ab id-e4df10a6127442328f7c45ab955ea731" archimateElement="id-110cb8b3e300416e9e7a7864736f6c3b">
+        <bounds x="523" y="456" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-f9938acf7358461fa4db7dd5be79f7ec" source="id-f9bea944c1db4f3cb5ebec04504eb637" target="id-a57efa76f4784ecc853dc2f6396a31ea" archimateRelationship="id-2ba0c0d53cad4d3f8f5ba7ac40d10b69"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-852685dc9e46440483372509e7ae330c" source="id-f9bea944c1db4f3cb5ebec04504eb637" target="id-793ceb3455134b24b48d5701197f7c94" archimateRelationship="id-83774ea490504789b149a12b9b6ba819"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-a57efa76f4784ecc853dc2f6396a31ea" targetConnections="id-f9938acf7358461fa4db7dd5be79f7ec" archimateElement="id-75d2ae0e94b94cd28d84b3d928493705">
+        <bounds x="696" y="456" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-4918db38191f4f3293f28c02270aea7e" source="id-a57efa76f4784ecc853dc2f6396a31ea" target="id-0f7a56e784924177862d86f8c07317dc" archimateRelationship="id-91624f76cd3e410b84ebd9e61577300c"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-e1d9f750320845158a07ce0943dcddc8" targetConnections="id-4c922bea2f7f469285aaa922152f08f2" archimateElement="id-93a47a37b4f74473b96c647595a61b89">
+        <bounds y="564" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-5c92eb58285c48eabe5370715c743f11" source="id-e1d9f750320845158a07ce0943dcddc8" target="id-1640ba8306f34387821321a711da2d01" archimateRelationship="id-75115b5f5e164d5497390254d59e41cd"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-32e2868d45a0434c87efecf4aa9a7e42" source="id-e1d9f750320845158a07ce0943dcddc8" target="id-0bf8670155924a898ca1343406d81db6" archimateRelationship="id-0c2f23f1d94b46668296003c716b92d7"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-1640ba8306f34387821321a711da2d01" targetConnections="id-5c92eb58285c48eabe5370715c743f11" archimateElement="id-89a241c8a3af47fdb7f8464fed64ca09">
+        <bounds x="204" y="564" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-8ced0930a46b4d1790ef4b5faf18a43c" source="id-1640ba8306f34387821321a711da2d01" target="id-ca29dd7b0b964232b8d88dadba271a43" archimateRelationship="id-4e60abd5aa384740819d78a3e4dba6de"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-ca29dd7b0b964232b8d88dadba271a43" targetConnections="id-8ced0930a46b4d1790ef4b5faf18a43c" archimateElement="id-d2ae91ea16e9418fbeb7443e56ccb400">
+        <bounds x="360" y="555" width="132" height="73"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-40094191d03141ffaf619af9e9cad839" source="id-ca29dd7b0b964232b8d88dadba271a43" target="id-af1206a4482a4244bf8d51afee6c8da1" archimateRelationship="id-4c62b7159fc44f47accb6d2bf0ae6ee4"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-af1206a4482a4244bf8d51afee6c8da1" targetConnections="id-40094191d03141ffaf619af9e9cad839" archimateElement="id-dcf85eb361ed4d03b6b4d46f17cb966c">
+        <bounds x="516" y="564" width="133" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-6974d6de4bf143a9aa1fa5a5ac8ae072" source="id-af1206a4482a4244bf8d51afee6c8da1" target="id-55ced2a9bc6644228cbbc0c291a62ae9" archimateRelationship="id-014d6810071b444d9d5d7fa0bc67b4a6"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-55ced2a9bc6644228cbbc0c291a62ae9" targetConnections="id-6974d6de4bf143a9aa1fa5a5ac8ae072" archimateElement="id-00c425818dcd42a2a720b6b03196cc5c">
+        <bounds x="691" y="564" width="156" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-471944ade9c848148b23d98dd70d8e51" source="id-55ced2a9bc6644228cbbc0c291a62ae9" target="id-33aa9447d9664cd58f0945eff391b190" archimateRelationship="id-07452232cc6c465786224eff95f54d33"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-0bf8670155924a898ca1343406d81db6" targetConnections="id-32e2868d45a0434c87efecf4aa9a7e42" archimateElement="id-c9d3d5002b5f48b59129a7a2ddadae14">
+        <bounds x="840" y="648" width="138" height="73"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-68b7df4b1fdb46c8baff6b69c06307da" source="id-0bf8670155924a898ca1343406d81db6" target="id-0f7a56e784924177862d86f8c07317dc" archimateRelationship="id-9fa477e3b5344d0d9a01b5c829b0f8af"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-33aa9447d9664cd58f0945eff391b190" targetConnections="id-471944ade9c848148b23d98dd70d8e51" archimateElement="id-b88c06c932fd4cbcac862d126af127e9">
+        <bounds x="685" y="696" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="id-940367bfc3e34c0ba4da046a7f60e974" source="id-33aa9447d9664cd58f0945eff391b190" target="id-e627282c96514a1a82ecf194b20f4f6e" archimateRelationship="id-3a581d2339a84f97935de9cbaf81a87b"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="id-e627282c96514a1a82ecf194b20f4f6e" targetConnections="id-940367bfc3e34c0ba4da046a7f60e974" archimateElement="id-4bc067501b5a465589c5af947864875c">
+        <bounds x="499" y="696" width="120" height="55"/>
+      </child>
+      <documentation>CEMADEN (Centro Nacional de Monitoramento e Alertas de Desastres)</documentation>
+    </element>
+  </folder>
+</archimate:model>
