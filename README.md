@@ -21,7 +21,8 @@ O repositório contém **documentação completa do projeto**, incluindo a **arq
 
 ## 👨‍💻 Integrantes do Projeto
 - Pedro Henrique Lima  
-- (adicione os demais integrantes aqui)
+- Leonardo Pimentel
+- Vitor Gomes Martins
 
 ## 📜 Licença
 Este projeto foi desenvolvido para fins acadêmicos como parte da **Global Solution da FIAP**.
